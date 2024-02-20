@@ -15,15 +15,15 @@ A demo to generate skeleton pseudo-labels is provided. Two optional maximum ener
 
 For training U-net, the training data is organized as:<br>
 ```
-ASI image dataset<br>
-│<br>
-└───test<br>
-&emsp;&emsp;     ├───Annotation<br>
-&emsp;&emsp;     └───images<br>
-│<br>
-└───training<br>
-&emsp;&emsp;     ├───Annotation<br>
-&emsp;&emsp;     └───images<br>
+ASI image dataset
+│
+└───test
+            ├───Annotation
+            └───images
+│
+└───training
+            ├───Annotation
+            └───images
 ```
 To **train the AAM**, the "Annotation" folder is a manually labeled image of the auroral area;&ensp;to **train the ASM**, the "Annotation" folder is the generated AuroSS pseudo-labels. &ensp;Then run:<br>
 &emsp;&emsp; python prepare_datasets.py
