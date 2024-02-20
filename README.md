@@ -2,18 +2,18 @@
   
 # Automatically Sketching AuroSS
 
-<div style="text-align: justify;"
-style="text-align-last: justify;"
-style="text-justify: inter-ideograph;">This is a source code used in the paper "Automatically Sketching Auroral Skeleton Structure in All-sky Image for Measuring Aurora Arcs".<br>
+This is a source code used in the paper "Automatically Sketching Auroral Skeleton Structure in All-sky Image for Measuring Aurora Arcs".<br>
 
 * **psudoLGeneration_ASI2Ridge_wq.m**(by calling tfridge.m or ridge_AreaOnASI.m). The scripts are used to generate skeleton pseudo-labels for training ASMs. Based on the probability map of the auroral regions output by the AAM, the ridges of each luminous region are detected.<br>
 * U-net for skeleton extraction and aurora detection (pixel identification) is based on image segmentation [1]. The U-net architecture is available at https://github.com/orobix/retina-unet.<br>
 * **Orientation_ASI2MLON_MLAT_wq.m** This code is used to calculate the arc tilt to measure auroral orientation. The obtained AuroSS is converted into geomagnetic coordinate reference frame. We calculate the arc tilt to measure auroral orientation.<br>
-* Cycle‐consistent Generative Adversarial Network (CycleGAN) [2] is used to generate ASI images. The method is used to test the effectiveness of our method on synthetic data. The code is available at https://github.com/junyanz/CycleGAN.<br></div>
+* Cycle‐consistent Generative Adversarial Network (CycleGAN) [2] is used to generate ASI images. The method is used to test the effectiveness of our method on synthetic data. The code is available at https://github.com/junyanz/CycleGAN.<br>
 
 
 ## How To Use
-
+<div style="text-align: justify;"
+style="text-align-last: justify;"
+style="text-justify: inter-ideograph;">
 Download the above code and packages and install the required toolbox and dependencies (detailed in Readme in each package).<br>
 
 A demo to generate skeleton pseudo-labels is provided. Two optional maximum energy based ridge extraction methods are provided. Manually selected better ones are used as pseudo-labels to train the ASMs.<br>
@@ -23,7 +23,7 @@ To **train the AAM**, the "Annotation" folder is a manually labeled image of the
 After obtaining the AuroSS which is saved in the folder "skeImgs", run **Orientation_ASI2MLON_MLAT_wq.m** to calculate the arc tilt to measure auroral orientation.<br>
 
 We used manually labeled skeleton images and real ASI images as training sets to train CycleGAN.
-
+</div>
 
 
 ## Data
