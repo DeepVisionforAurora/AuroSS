@@ -14,7 +14,7 @@ Download the above code and packages and install the required toolbox and depend
 A demo to generate skeleton pseudo-labels is provided. Two optional maximum energy based ridge extraction methods are provided. Manually selected better ones are used as pseudo-labels to train the ASMs.<br>
 
 For training U-net, the training data is organized as:<br>
-```
+
 ASI image dataset
 │
 └───test
@@ -24,24 +24,19 @@ ASI image dataset
 └───training
    ├───Annotation
    └───images
-```
+
 To **train the AAM**, the "Annotation" folder is a manually labeled image of the auroral area;&ensp;to **train the ASM**, the "Annotation" folder is the generated AuroSS pseudo-labels. &ensp;Then run:<br>
-```
-python prepare_datasets.py
-```
+&emsp;&emsp; python prepare_datasets.py
    
 Specify the parameters in configuration.txt. &ensp; Training and inference run by:<br>
-```
-python run_training.py
-python run_testing.py
-```
+&emsp;&emsp; python run_training.py<br>
+&emsp;&emsp; python run_testing.py<br>
+
    
 After obtaining the AuroSS which is saved under folder "skeImgs", run **Orientation_ASI2MLON_MLAT_wq.m** to calculate the arc tilt to measure auroral orientation.<br>
 
 We used manually labeled skeleton images and real ASI images as training sets to train CycleGAN, run:<br>
-```
-DATA_ROOT=./ASIdatast name=ASI_model th train.lua
-```
+&emsp;&emsp;DATA_ROOT=./ASIdatast name=ASI_model th train.lua
 
  
 
