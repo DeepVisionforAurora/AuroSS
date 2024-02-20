@@ -17,14 +17,14 @@ For training U-net, the training data is organized as:<br>
 ASI image dataset<br>
 │<br>
 └───test<br>
-|    ├───Annotation<br>
-|    └───images<br>
+&emsp;&emsp;     ├───Annotation<br>
+&emsp;&emsp;     └───images<br>
 │<br>
 └───training<br>
-     ├───Annotation<br>
-     └───images<br>
+&emsp;&emsp;     ├───Annotation<br>
+&emsp;&emsp;     └───images<br>
      
-To train the AAM, the "Annotation" folder is a manually labeled image of the auroral area; to train ASM, the "Annotation" folder is the generated AuroSS pseudo-labels. Then run:<br>
+To**train the AAM**, the "Annotation" folder is a manually labeled image of the auroral area; to **train the ASM**, the "Annotation" folder is the generated AuroSS pseudo-labels. Then run:<br>
    python prepare_datasets.py
    
 Specify the parameters in configuration.txt. &nbsp;Training and inference run by:<br>
