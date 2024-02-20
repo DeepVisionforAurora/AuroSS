@@ -7,6 +7,7 @@ Implementation for AuroSS detection needs:<br>
 * U-net for skeleton extraction and aurora detection (pixel identification) is based on image segmentation [1]. The U-net architecture is available at https://github.com/orobix/retina-unet.<br>
 * **Orientation_ASI2MLON_MLAT_wq.m**. This code is used to calculate the arc tilt to measure auroral orientation. The obtained AuroSS is converted into geomagnetic coordinate reference frame. We calculate the arc tilt to measure auroral orientation.<br>
 * Cycle‐consistent Generative Adversarial Network (CycleGAN) [2] is used to generate ASI images. The method is used to test the effectiveness of our method on synthetic data. The code is available at https://github.com/junyanz/CycleGAN.<br>
+</div>
 
 ## How To Use
 
@@ -33,4 +34,4 @@ The data source, acquisition instruments, data characteristics, preprocessing me
 
 [2]  Zhu, Jun-Yan, et al. "Unpaired image-to-image translation using cycle-consistent adversarial networks." Proceedings of the IEEE international conference on computer vision. 2017.
 
-</div>
+
