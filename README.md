@@ -1,4 +1,6 @@
-<div style="text-align: justify;">
+<div style="text-align: justify;"
+  "text-align-last: justify;"
+text-justify: inter-ideograph;/*兼容ie*/>
   
   # Automatically Sketching AuroSS
 
