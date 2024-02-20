@@ -1,6 +1,6 @@
 # Automatically Sketching AuroSS
 
-This is a source code used in the paper "Automatically Sketching Auroral Skeleton Structure in All-sky Image for Measuring Aurora Arcs"<br>
+This is a source code used in the paper "Automatically Sketching Auroral Skeleton Structure in All-sky Image for Measuring Aurora Arcs".<br>
 
 Implementation for AuroSS detection needs:<br>
 * **psudoLGeneration_ASI2Ridge_wq.m** (by calling tfridge.m or ridge_AreaOnASI.m). The scripts are used to generate skeleton pseudo-labels for training ASMs. Based on the probability map of the auroral regions output by the AAM, the ridges of each luminous region are detected.<br>
@@ -17,7 +17,7 @@ To **train the AAM**, the "Annotation" folder is a manually labeled image of the
 
 After obtaining the AuroSS which is saved under folder "skeImgs", run **Orientation_ASI2MLON_MLAT_wq.m** to calculate the arc tilt to measure auroral orientation.<br>
 
-We used manually labeled skeleton images and real ASI images as training sets to train CycleGAN
+We used manually labeled skeleton images and real ASI images as training sets to train CycleGAN.
  
 
 
