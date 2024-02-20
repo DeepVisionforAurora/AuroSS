@@ -4,7 +4,7 @@ This is a source code used in the paper "Automatically Sketching Auroral Skeleto
 
 Implementation for AuroSS detection needs:<br>
 * psudoLGeneration_ASI2Ridge_wq.m (by calling tfridge.m or ridge_AreaOnASI.m). The scripts are used to generate skeleton pseudo-labels for training ASMs. Based on the probability map of the auroral regions output by the AAM, the ridges of each luminous region are detected.<br>
-* U-net for skeleton extraction and aurora detection (pixel identification) is based on image segmentation [1]. U-net architecture is available at https://github.com/orobix/retina-unet.<br>
+* U-net for skeleton extraction and aurora detection (pixel identification) is based on image segmentation [1].      U-net architecture is available at https://github.com/orobix/retina-unet.<br>
 * Orientation_ASI2MLON_MLAT_wq.m This code is used to calculate the arc tilt to measure auroral orientation. The obtained AuroSS is converted into geomagnetic coordinate reference frame. We calculate the arc tilt to measure auroral orientation.<br>
 * Cycle‐consistent Generative Adversarial Network (CycleGAN) [2] is used to generate ASI images. The method is used to test the effectiveness of our method on synthetic data. The code is available at https://github.com/junyanz/CycleGAN.<br>
 
@@ -25,7 +25,7 @@ ASI image dataset<br>
      └───images<br>
      
 To train the AAM, the "Annotation" folder is a manually labeled image of the auroral area; to train ASM, the "Annotation" folder is the generated AuroSS pseudo-labels. Then run:<br>
-   python prepare_datasets.py<br>
+   ```python prepare_datasets.py```
    
 Specify the parameters in configuration.txt. Training and inference run by:<br>
    python run_training.py<br>
