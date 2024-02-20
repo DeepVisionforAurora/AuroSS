@@ -17,8 +17,11 @@ A demo to generate skeleton pseudo-labels is provided. Two optional maximum ener
 For training U-net, the training data is organized as:
 ASI image dataset
 │
+
 └───test
+
 |    ├───Annotation
+
 |    └───images
 │
 └───training
