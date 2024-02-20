@@ -11,11 +11,12 @@ Implementation for AuroSS detection needs:<br>
 ## How To Use
 
 Download the above code and packages and install the required toolbox and dependencies (detailed in Readme in each package).<br>
+
 A demo to generate skeleton pseudo-labels is provided. Two optional maximum energy based ridge extraction methods are provided. Manually selected better ones are used as pseudo-labels to train the ASMs.<br>
 
 To **train the AAM**, the "Annotation" folder is a manually labeled image of the auroral area;&ensp;to **train the ASM**, the "Annotation" folder is the generated AuroSS pseudo-labels.<br>
 
-After obtaining the AuroSS which is saved under folder "skeImgs", run **Orientation_ASI2MLON_MLAT_wq.m** to calculate the arc tilt to measure auroral orientation.<br>
+After obtaining the AuroSS which is saved in the folder "skeImgs", run **Orientation_ASI2MLON_MLAT_wq.m** to calculate the arc tilt to measure auroral orientation.<br>
 
 We used manually labeled skeleton images and real ASI images as training sets to train CycleGAN.
  
