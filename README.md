@@ -28,7 +28,7 @@ To train the AAM, the "Annotation" folder is a manually labeled image of the aur
    ```python prepare_datasets.py```<br>
 
 Specify the parameters in configuration.txt. Training and inference run by:<br>
-   ```python run_training.py<br>
+   python run_training.py<br>
    python run_testing.py<br>
 
 After obtaining the AuroSS which is saved under folder "skeImgs", run Orientation_ASI2MLON_MLAT_wq.m to calculate the arc tilt to measure auroral orientation.<br>
