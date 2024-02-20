@@ -2,12 +2,13 @@
              
 # Automatically Sketching AuroSS
 
-<sub> &ensp; </sub> This is a source code used in the paper "Automatically Sketching Auroral Skeleton Structure in All-sky Image for Measuring Aurora Arcs".<br>
+This is a source code used in the paper "Automatically Sketching Auroral Skeleton Structure in All-sky Image for Measuring Aurora Arcs".<br>
 
-<sub> &ensp; </sub> Implementation for AuroSS detection needs:<br>
-<sub> &ensp; </sub>  * **psudoLGeneration_ASI2Ridge_wq.m** (by calling tfridge.m or ridge_AreaOnASI.m). The scripts are used to generate skeleton pseudo-labels for training ASMs. Based on the probability map of the auroral regions output by the AAM, the ridges of each luminous region are detected.<br> 
-<sub> &ensp; </sub>* **Orientation_ASI2MLON_MLAT_wq.m**. This code is used to calculate the arc tilt to measure auroral orientation. The obtained AuroSS is converted into geomagnetic coordinate reference frame. We calculate the arc tilt to measure auroral orientation.<br> 
-<sub> &ensp; </sub>  * Cycle‐consistent Generative Adversarial Network (CycleGAN) [2] is used to generate ASI images. The method is used to test the effectiveness of our method on synthetic data. The code is available at https://github.com/junyanz/CycleGAN.<br>
+* **psudoLGeneration_ASI2Ridge_wq.m**(by calling tfridge.m or ridge_AreaOnASI.m). The scripts are used to generate skeleton pseudo-labels for training ASMs. Based on the probability map of the auroral regions output by the AAM, the ridges of each luminous region are detected.<br>
+* U-net for skeleton extraction and aurora detection (pixel identification) is based on image segmentation [1]. The U-net architecture is available at https://github.com/orobix/retina-unet.<br>
+* **Orientation_ASI2MLON_MLAT_wq.m** This code is used to calculate the arc tilt to measure auroral orientation. The obtained AuroSS is converted into geomagnetic coordinate reference frame. We calculate the arc tilt to measure auroral orientation.<br>
+* Cycle‐consistent Generative Adversarial Network (CycleGAN) [2] is used to generate ASI images. The method is used to test the effectiveness of our method on synthetic data. The code is available at https://github.com/junyanz/CycleGAN.<br>
+
 
 
 ## How To Use
