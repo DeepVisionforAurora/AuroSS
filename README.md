@@ -1,4 +1,4 @@
-![image](https://github.com/Dabai1205/AuroSS/assets/92871433/4d93a27a-2528-40a0-a45b-a6f618b7b6ee)# Automatically Sketching AuroSS
+# Automatically Sketching AuroSS
 
 This is a source code used in the paper "Automatically Sketching Auroral Skeleton Structure in All-sky Image for Measuring Aurora Arcs"<br>
 
