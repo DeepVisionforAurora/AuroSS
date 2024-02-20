@@ -1,6 +1,6 @@
 <div style="text-align: justify;">
-             
-# Automatically Sketching AuroSS
+  
+  # Automatically Sketching AuroSS
 
 This is a source code used in the paper "Automatically Sketching Auroral Skeleton Structure in All-sky Image for Measuring Aurora Arcs".<br>
 
@@ -35,6 +35,4 @@ The data source, acquisition instruments, data characteristics, preprocessing me
 [1] Ronneberger, Olaf, Philipp Fischer, and Thomas Brox. "U-net: Convolutional networks for biomedical image segmentation." Medical Image Computing and Computer-Assisted Intervention–MICCAI 2015: 18th International Conference, Munich, Germany, October 5-9, 2015, Proceedings, Part III 18. Springer International Publishing, 2015.<br>
 
 [2]  Zhu, Jun-Yan, et al. "Unpaired image-to-image translation using cycle-consistent adversarial networks." Proceedings of the IEEE international conference on computer vision. 2017.
-
-
 </div>
