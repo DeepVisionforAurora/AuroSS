@@ -1,20 +1,14 @@
-.p {
-    text-align-last: justify;
-    -moz-text-align-last: justify ;  //兼容firefox
-    text-align: justify;
-    text-justify: distribute-all-lines;  //兼容ie
-    display: block; //ie下需设为block
-    width: 80px; 
-}
-  
+text-align:justify;
+text-align-last:justify;
+
 # Automatically Sketching AuroSS
 
-<p>This is a source code used in the paper "Automatically Sketching Auroral Skeleton Structure in All-sky Image for Measuring Aurora Arcs".<br>
+This is a source code used in the paper "Automatically Sketching Auroral Skeleton Structure in All-sky Image for Measuring Aurora Arcs".<br>
 
 * **psudoLGeneration_ASI2Ridge_wq.m**(by calling tfridge.m or ridge_AreaOnASI.m). The scripts are used to generate skeleton pseudo-labels for training ASMs. Based on the probability map of the auroral regions output by the AAM, the ridges of each luminous region are detected.<br>
 * U-net for skeleton extraction and aurora detection (pixel identification) is based on image segmentation [1]. The U-net architecture is available at https://github.com/orobix/retina-unet.<br>
 * **Orientation_ASI2MLON_MLAT_wq.m** This code is used to calculate the arc tilt to measure auroral orientation. The obtained AuroSS is converted into geomagnetic coordinate reference frame. We calculate the arc tilt to measure auroral orientation.<br>
-* Cycle‐consistent Generative Adversarial Network (CycleGAN) [2] is used to generate ASI images. The method is used to test the effectiveness of our method on synthetic data. The code is available at https://github.com/junyanz/CycleGAN.<br></p>
+* Cycle‐consistent Generative Adversarial Network (CycleGAN) [2] is used to generate ASI images. The method is used to test the effectiveness of our method on synthetic data. The code is available at https://github.com/junyanz/CycleGAN.<br>
 
 
 ## How To Use
@@ -41,5 +35,3 @@ The data source, acquisition instruments, data characteristics, preprocessing me
 [1] Ronneberger, Olaf, Philipp Fischer, and Thomas Brox. "U-net: Convolutional networks for biomedical image segmentation." Medical Image Computing and Computer-Assisted Intervention–MICCAI 2015: 18th International Conference, Munich, Germany, October 5-9, 2015, Proceedings, Part III 18. Springer International Publishing, 2015.<br>
 
 [2]  Zhu, Jun-Yan, et al. "Unpaired image-to-image translation using cycle-consistent adversarial networks." Proceedings of the IEEE international conference on computer vision. 2017.
-
-
