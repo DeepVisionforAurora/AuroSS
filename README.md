@@ -14,6 +14,7 @@ Download the above code and packages and install the required toolbox and depend
 A demo to generate skeleton pseudo-labels is provided. Two optional maximum energy based ridge extraction methods are provided. Manually selected better ones are used as pseudo-labels to train the ASMs.<br>
 
 For training U-net, the training data is organized as:<br>
+```
 ASI image dataset<br>
 │<br>
 └───test<br>
@@ -23,7 +24,7 @@ ASI image dataset<br>
 └───training<br>
 &emsp;&emsp;     ├───Annotation<br>
 &emsp;&emsp;     └───images<br>
-     
+```
 To **train the AAM**, the "Annotation" folder is a manually labeled image of the auroral area;&ensp;to **train the ASM**, the "Annotation" folder is the generated AuroSS pseudo-labels. &ensp;Then run:<br>
 &emsp;&emsp; python prepare_datasets.py
    
