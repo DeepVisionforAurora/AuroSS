@@ -1,8 +1,8 @@
 <div style="text-align: justify;"
-  style="text-align-last: justify;"
+style="text-align-last: justify;"
 style="text-justify: inter-ideograph;">
   
-  # Automatically Sketching AuroSS
+# Automatically Sketching AuroSS
 
 This is a source code used in the paper "Automatically Sketching Auroral Skeleton Structure in All-sky Image for Measuring Aurora Arcs".<br>
 
