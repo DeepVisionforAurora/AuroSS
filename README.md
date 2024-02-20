@@ -1,7 +1,5 @@
-<div style="text-align: justify;">
-
 # Automatically Sketching AuroSS
-
+<div style="text-align: justify;">
 This is a source code used in the paper "Automatically Sketching Auroral Skeleton Structure in All-sky Image for Measuring Aurora Arcs".<br>
 
 Implementation for AuroSS detection needs:<br>
