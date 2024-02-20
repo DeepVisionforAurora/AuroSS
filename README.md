@@ -1,6 +1,3 @@
-text-align:justify;
-text-align-last:justify;
-
 # Automatically Sketching AuroSS
 
 This is a source code used in the paper "Automatically Sketching Auroral Skeleton Structure in All-sky Image for Measuring Aurora Arcs".<br>
