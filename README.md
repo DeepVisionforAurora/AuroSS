@@ -9,18 +9,19 @@ Cycle‐consistent Generative Adversarial Network (CycleGAN) [2] is used to gene
 
 ## How To Use
 
-Download the above code and packages and install the required toolbox and dependencies (detailed in Readme in each package).
-A demo to generate skeleton pseudo-labels is provided. Two optional maximum energy based ridge extraction methods are provided. Manually selected better ones are used as pseudo-labels to train the ASMs.
-For training U-net, the training data is organized as:
-ASI image dataset
-│
-└───test
-|    ├───Annotation
-|    └───images
-│
-└───training
-     ├───Annotation
-     └───images
+Download the above code and packages and install the required toolbox and dependencies (detailed in Readme in each package).<br>
+A demo to generate skeleton pseudo-labels is provided. Two optional maximum energy based ridge extraction methods are provided. Manually selected better ones are used as pseudo-labels to train the ASMs.<br>
+
+For training U-net, the training data is organized as:<br>
+ASI image dataset<br>
+│<br>
+└───test<br>
+|    ├───Annotation<br>
+|    └───images<br>
+│<br>
+└───training<br>
+     ├───Annotation<br>
+     └───images<br>
 To train the AAM, the "Annotation" folder is a manually labeled image of the auroral area; to train ASM, the "Annotation" folder is the generated AuroSS pseudo-labels. Then run:
    python prepare_datasets.py
 Specify the parameters in configuration.txt. Training and inference run by:
