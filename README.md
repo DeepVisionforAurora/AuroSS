@@ -24,14 +24,14 @@ ASI image dataset<br>
      ├───Annotation<br>
      └───images<br>
      
-To train the AAM, the "Annotation" folder is a manually labeled image of the auroral area; to train ASM, the "Annotation" folder is the generated AuroSS pseudo-labels. Then run::<br>
+To train the AAM, the "Annotation" folder is a manually labeled image of the auroral area; to train ASM, the "Annotation" folder is the generated AuroSS pseudo-labels. Then run:<br>
    python prepare_datasets.py
    
-Specify the parameters in configuration.txt. :<br>Training and inference run by::<br>
-   python run_training.py:<br>
-   python run_testing.py:<br>
-After obtaining the AuroSS which is saved under folder "skeImgs", run Orientation_ASI2MLON_MLAT_wq.m to calculate the arc tilt to measure auroral orientation.:<br>
-We used manually labeled skeleton images and real ASI images as training sets to train CycleGAN, run::<br>
+Specify the parameters in configuration.txt. <br>Training and inference run by:<br>
+   python run_training.py<br>
+   python run_testing.py<br>
+After obtaining the AuroSS which is saved under folder "skeImgs", run Orientation_ASI2MLON_MLAT_wq.m to calculate the arc tilt to measure auroral orientation.<br>
+We used manually labeled skeleton images and real ASI images as training sets to train CycleGAN, run:<br>
       DATA_ROOT=./ASIdatast name=ASI_model th train.lua
 
  
