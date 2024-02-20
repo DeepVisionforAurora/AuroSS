@@ -41,7 +41,8 @@ We used manually labeled skeleton images and real ASI images as training sets to
 
 ## Data
 
-The aurora images in this dataset are from the all-sky imagers at the Yellow River Station (YRS). And it is used in the paper Automatically sketching Auroral Skeleton Structure in All-sky Image for Measuring Aurora Arcs. The data source, acquisition instruments, data characteristics, preprocessing methods, and naming conventions of this dataset are detailed at https://doi.org/10.5281/zenodo.10464846.<br>
+The aurora images in this dataset are from the all-sky imagers at the Yellow River Station (YRS). And it is used in the paper Automatically sketching Auroral Skeleton Structure in All-sky Image for Measuring Aurora Arcs. <br>
+The data source, acquisition instruments, data characteristics, preprocessing methods, and naming conventions of this dataset are detailed at https://doi.org/10.5281/zenodo.10464846.<br>
 
 ## Reference
 
