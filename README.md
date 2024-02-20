@@ -1,7 +1,5 @@
-p{  text-align: justify;
-            text-align-last: justify;
-            text-justify: distribute;}
- <p>           
+<div style="text-align: justify;">
+             
 # Automatically Sketching AuroSS
 
 This is a source code used in the paper "Automatically Sketching Auroral Skeleton Structure in All-sky Image for Measuring Aurora Arcs".<br>
@@ -37,4 +35,5 @@ The data source, acquisition instruments, data characteristics, preprocessing me
 
 [2]  Zhu, Jun-Yan, et al. "Unpaired image-to-image translation using cycle-consistent adversarial networks." Proceedings of the IEEE international conference on computer vision. 2017.
 
-</p>
+
+</div>
