@@ -1,5 +1,5 @@
 # AuroSS
-This is a source code used in the paper "Automatically Sketching Auroral Skeleton Structure in All-sky Image for Measuring Aurora Arcs".
+This is a source code used in the paper "Automatically Sketching Auroral Skeleton Structure in All-sky Image for Measuring Aurora Arcs"
 
 Implementation for AuroSS detection needs:
 psudoLGeneration_ASI2Ridge_wq.m (by calling tfridge.m or ridge_AreaOnASI.m). The scripts are used to generate skeleton pseudo-labels for training ASMs. Based on the probability map of the auroral regions output by the AAM, the ridges of each luminous region are detected.
@@ -38,3 +38,4 @@ The aurora images in this dataset are from the all-sky imagers at the Yellow Riv
 
 [1] Ronneberger, Olaf, Philipp Fischer, and Thomas Brox. "U-net: Convolutional networks for biomedical image segmentation." Medical Image Computing and Computer-Assisted Intervention–MICCAI 2015: 18th International Conference, Munich, Germany, October 5-9, 2015, Proceedings, Part III 18. Springer International Publishing, 2015.
 [2]  Zhu, Jun-Yan, et al. "Unpaired image-to-image translation using cycle-consistent adversarial networks." Proceedings of the IEEE international conference on computer vision. 2017.
+
