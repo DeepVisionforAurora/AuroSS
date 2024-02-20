@@ -24,7 +24,7 @@ ASI image dataset<br>
 &emsp;&emsp;     ├───Annotation<br>
 &emsp;&emsp;     └───images<br>
      
-To **train the AAM**, the "Annotation" folder is a manually labeled image of the auroral area;&ensp;v to **train the ASM**, the "Annotation" folder is the generated AuroSS pseudo-labels. &ensp;Then run:<br>
+To **train the AAM**, the "Annotation" folder is a manually labeled image of the auroral area;&ensp;to **train the ASM**, the "Annotation" folder is the generated AuroSS pseudo-labels. &ensp;Then run:<br>
 &emsp;&emsp; python prepare_datasets.py
    
 Specify the parameters in configuration.txt. &ensp; Training and inference run by:<br>
