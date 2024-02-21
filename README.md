@@ -16,7 +16,7 @@ A demo to generate skeleton pseudo-labels is provided. Two optional maximum ener
 
 To **train the AAM**, the "Annotation" folder is a manually labeled image of the auroral area;&ensp;to **train the ASM**, the "Annotation" folder is the generated AuroSS pseudo-labels.<br>
 
-After obtaining the AuroSS which is saved in the folder "skeImgs", run **Orientation_ASI2MLON_MLAT_wq.m** to calculate the arc tilt to measure auroral orientation.<br>
+After obtaining the AuroSS which is saved in the folder "skeImgs", run **orientation_ASI2MLON_MLAT_wq.m** to calculate the arc tilt to measure auroral orientation.<br>
 
 We used manually labeled skeleton images and real ASI images as training sets to train CycleGAN.
 
